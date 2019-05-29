@@ -1,15 +1,36 @@
 {
-  "name": "hello-world",
-  "version": "1.0.0",
+  "name": "StudySabaiAdmin",
+  "version": "1.0.1",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "dev": "next",
+    "dev": "nodemon server/app.js --watch server",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "now-build": "next build",
+    "git": "git add . && git commit -m 'new change' && git push origin gapdev "
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "next": "latest",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "@zeit/next-css": "^1.0.1",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "isomorphic-unfetch": "^3.0.0",
+    "mongoose": "^5.5.7",
+    "next": "^8.0.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "reactstrap": "^8.0.0",
+    "styled-components": "^4.2.0"
   },
-  "license": "ISC"
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.19.0"
+  }
 }
